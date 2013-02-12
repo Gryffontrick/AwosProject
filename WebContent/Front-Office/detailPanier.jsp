@@ -75,14 +75,12 @@
 						<td><span id="totalProduit${item.getProduit().getId()}"> ${item.getTotal()}</span>€</td>
 					</tr>
 					</c:forEach>
-	
 				</table>
 				<a href="./viderPanier.action">Vider le panier</a><br>
 				Total de votre commande : <span id="totalPanier"> ${panier.getTotal()}</span> €
 				<a href="./detailCommande.action"><input type="button" value="Valider" /></a>
 			</c:otherwise>
 			</c:choose>
-
 		</div>
 	</div>	
    	<div><jsp:include page="right.jsp" /></div>
